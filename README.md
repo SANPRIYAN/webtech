@@ -1,6 +1,6 @@
 # Web Technologies Lab Repository
 
-Repository for Web Technologies coursework, laboratory experiments, and formatting exercises.
+Repository for Web Technologies coursework, laboratory experiments, and practical model lab setups.
 
 ## 📂 Repository Contents
 
@@ -8,4 +8,10 @@ Repository for Web Technologies coursework, laboratory experiments, and formatti
   - `books.xml`: Well-formed XML document storing catalog data with stylesheet linking.
   - `books.css`: CSS stylesheet styling raw XML elements.
   - `books.xsl`: XSLT stylesheet transforming XML data into an HTML table.
-  - `README.md`: Standardized AI prompt templates (identical format & size) and instructions on adapting them to any lab question.
+  - `README.md`: Quick how-to-run guide and single prompt template for XML, CSS, and XSLT.
+
+- [**`frontend angular and backend mongoose/`**](frontend%20angular%20and%20backend%20mongoose/) - Full-Stack Model Lab Application:
+  - `frontend/index.html`: Complete AngularJS single-page CRUD client (Add, View, Search, Delete).
+  - `backend/server.js`: Node.js + Express API connected to MongoDB via Mongoose.
+  - `backend/package.json`: Dependencies config (`express`, `mongoose`, `cors`).
+  - `README.md`: Complete Windows installation guide, service troubleshooting (`Error 1060`, `sc query`), and pre-lab checklist.
