@@ -17,6 +17,7 @@ Complete step-by-step setup guide for your Windows lab computer to configure, ru
 9. [Common Errors & Fixes](#9-common-errors--fixes)
 10. [Commands to Memorize for Exam](#10-commands-to-memorize-for-exam)
 11. [Final Pre-Lab Checklist](#11-final-pre-lab-checklist)
+12. [Automated Selenium Testing](#12-automated-selenium-testing)
 
 ---
 
@@ -213,3 +214,19 @@ node server.js
 - [ ] `node server.js` displays `MongoDB Connected` and `Server running at http://localhost:5000`
 - [ ] `frontend/index.html` loads and successfully adds, reads, and deletes records
 - [ ] Inserted records verified inside Compass under `web_lab.records`
+- [ ] Selenium tests pass via `python selenium_test.py` and screenshots saved
+
+---
+
+## 12. Automated Selenium Testing
+
+A complete automated Selenium test suite is included in [`selenium_test.py`](selenium_test.py).
+For instructions on how to run tests and adapt the script to any exam question, see the [Selenium Testing Guide](SELENIUM_GUIDE.md).
+
+```cmd
+:: Install Selenium dependencies
+pip install selenium webdriver-manager
+
+:: Run test suite (with node server.js running)
+python selenium_test.py
+```

@@ -78,50 +78,57 @@
 <body ng-controller="MainController">
 
 <div class="container">
-    <h2>Student Management System</h2>
+    <h2 id="pageTitle">Student Management System</h2>
 
-    <form ng-submit="addRecord()">
+    <form id="recordForm" ng-submit="addRecord()">
         <input type="text"
+               id="inputName"
                ng-model="formData.name"
                placeholder="Student Name" required>
 
         <input type="text"
+               id="inputDept"
                ng-model="formData.department"
                placeholder="Department" required>
 
         <input type="number"
+               id="inputAge"
                ng-model="formData.age"
                placeholder="Age" required>
 
-        <button type="submit">Add Student</button>
+        <button type="submit" id="addBtn">Add Student</button>
     </form>
 
-    <p class="message">{{message}}</p>
+    <p class="message" id="statusMessage">{{message}}</p>
 
     <input type="text"
+           id="searchInput"
            ng-model="searchText"
            placeholder="Search students">
 
-    <button ng-click="getRecords()">Refresh</button>
+    <button id="refreshBtn" ng-click="getRecords()">Refresh</button>
 
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Department</th>
-            <th>Age</th>
-            <th>Action</th>
-        </tr>
-
-        <tr ng-repeat="s in records | filter:searchText">
-            <td>{{s.name}}</td>
-            <td>{{s.department}}</td>
-            <td>{{s.age}}</td>
-            <td>
-                <button class="delete-btn" ng-click="deleteRecord(s._id)">
-                    Delete
-                </button>
-            </td>
-        </tr>
+    <table id="recordsTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Age</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="s in records | filter:searchText" class="record-row">
+                <td class="record-name">{{s.name}}</td>
+                <td class="record-dept">{{s.department}}</td>
+                <td class="record-age">{{s.age}}</td>
+                <td>
+                    <button class="delete-btn" ng-click="deleteRecord(s._id)">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+        </tbody>
     </table>
 </div>
 

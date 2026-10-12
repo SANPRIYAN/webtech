@@ -1,11 +1,14 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const path = require("path");
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
+// Serve frontend static files
+app.use(express.static(path.join(__dirname, "../frontend")));
 
 // Connect to local MongoDB
 mongoose.connect("mongodb://127.0.0.1:27017/web_lab")

@@ -14,4 +14,6 @@ Repository for Web Technologies coursework, laboratory experiments, and practica
   - `frontend/index.html`: Complete AngularJS single-page CRUD client (Add, View, Search, Delete).
   - `backend/server.js`: Node.js + Express API connected to MongoDB via Mongoose.
   - `backend/package.json`: Dependencies config (`express`, `mongoose`, `cors`).
+  - `selenium_test.py`: Automated Selenium test suite (Interface, Insert, Search, and Delete tests).
+  - `SELENIUM_GUIDE.md`: Step-by-step instructions for running Selenium and adapting it to any lab question.
   - `README.md`: Complete Windows installation guide, service troubleshooting (`Error 1060`, `sc query`), and pre-lab checklist.
