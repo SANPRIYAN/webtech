@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html ng-app="loginApp">
+<head>
+    <title>Login Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <style>
+        body { font-family: Arial; text-align: center; }
+        input, button { margin: 8px; padding: 8px; }
+    </style>
+</head>
+
+<body ng-controller="loginController">
+    <h2>Login Page</h2>
+
+    <form ng-submit="login()">
+        <input id="username" ng-model="username"
+               placeholder="Username" required>
+        <br>
+        <input id="password" type="password"
+               ng-model="password" placeholder="Password" required>
+        <br>
+        <button id="loginButton" type="submit">Login</button>
+    </form>
+
+    <p id="message">{{message}}</p>
+
+    <script>
+        angular.module("loginApp", [])
+        .controller("loginController", function($scope, $http) {
+            $scope.login = function() {
+                $http.post("/login", {
+                    username: $scope.username,
+                    password: $scope.password
+                }).then(function(response) {
+                    $scope.message = response.data.message;
+                }).catch(function(error) {
+                    $scope.message = error.data.message;
+                });
+            };
+        });
+    </script>
+</body>
+</html>
