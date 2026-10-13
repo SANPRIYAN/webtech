@@ -1,0 +1,147 @@
+You are helping me prepare for my 22IT550 Web Technologies Model Lab Examination.
+
+I will provide a problem statement. Generate a COMPLETE, WORKING, and MINIMAL full-stack application based on it.
+
+### STRICT TECHNOLOGY STACK
+
+Frontend:
+- HTML
+- CSS
+- AngularJS 1.x (CDN)
+
+Backend:
+- Node.js
+- Express.js
+
+Database:
+- MongoDB
+- Mongoose
+
+Do not use React, Angular 2+, TypeScript, Bootstrap, Tailwind, or unnecessary libraries.
+
+### PROBLEM STATEMENT
+
+[PASTE MY QUESTION HERE]
+
+### MOST IMPORTANT: CODING STYLE
+
+Write code like a student implementing a program during a practical examination.
+
+Follow these rules strictly:
+
+1. Use the MINIMUM possible lines of code while maintaining readability.
+2. Avoid unnecessary imports, packages, functions, classes, and files.
+3. Use simple variable names and straightforward logic.
+4. Do not create separate controllers, services, middleware, or complex architecture unless required.
+5. Avoid overengineering and unnecessary abstractions.
+6. Do not include lengthy comments or AI-style explanations inside the code.
+7. Avoid unnecessary animations, icons, libraries, and decorative UI elements.
+8. Use basic CSS to create a neat, attractive, responsive interface.
+9. Prefer simple functions over complicated programming techniques.
+10. Keep the code easy to memorize, reproduce, and explain in a lab viva.
+11. Do not sacrifice required functionality just to reduce the line count.
+12. Every button, API endpoint, and database operation must actually work.
+
+### MINIMUM PROJECT STRUCTURE
+
+Prefer only these files:
+
+project/
+├── server.js
+├── package.json
+└── public/
+    ├── index.html
+    ├── style.css
+    └── app.js
+
+Keep the Mongoose schema, MongoDB connection, and Express API routes together in server.js.
+
+Do not split code into multiple files unnecessarily.
+
+### FRONTEND REQUIREMENTS
+
+Use AngularJS with:
+- ng-app
+- ng-controller
+- ng-model
+- ng-repeat
+- ng-click
+- ng-submit
+- $http
+
+Use only the directives actually required by the question.
+
+Implement the necessary features:
+- Display records
+- Add records
+- Edit records
+- Delete records
+- Search/filter (if required)
+- Basic form validation
+- Success/error handling
+
+Use a simple, professional UI.
+
+### BACKEND REQUIREMENTS
+
+Use Express and Mongoose.
+
+Implement the required CRUD operations:
+
+- GET
+- POST
+- PUT
+- DELETE
+
+Use short, readable API functions.
+
+Store data permanently in MongoDB, not in temporary JavaScript arrays.
+
+Use minimal but necessary error handling.
+
+### IMPORTANT EXAM CONDITIONS
+
+- No dummy functionality.
+- No unnecessary npm packages.
+- No excessive boilerplate.
+- No complicated folder structure.
+- No lengthy comments.
+- No unused imports.
+- No advanced syntax when a simpler alternative exists.
+- No unnecessary authentication or additional features.
+- Use AngularJS, not modern Angular.
+- Ensure frontend and backend field names match.
+- Ensure the application runs correctly after restarting the server.
+
+If the question only requires frontend functionality, do not unnecessarily implement a backend.
+
+If a Figma prototype is requested, provide a simple layout plan that can be recreated quickly.
+
+### REQUIRED OUTPUT FORMAT
+
+Give the answer in this order:
+
+1. Minimum terminal commands to create and run the project.
+2. Simple folder structure.
+3. Complete server.js code.
+4. Complete index.html code.
+5. Complete app.js code.
+6. Complete style.css code.
+7. Exact execution commands.
+8. Short explanation of how the code satisfies Part (a) and Part (b).
+
+Provide all code in separate, copy-paste-ready blocks.
+
+Do not provide multiple alternative implementations.
+
+Do not write long theoretical explanations unless I ask.
+
+PRIORITY ORDER:
+
+1. Correctness
+2. Minimum code
+3. Easy to understand
+4. Easy to write during examination
+5. Clean and attractive UI
+
+The final application must be simple enough for a student to reproduce during a time-limited practical examination while satisfying all requirements of the given 25-mark question.

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="books.xsl"?>
+<catalog>
+  <book>
+    <title>Web Technologies</title>
+    <author>Jambu Omayan</author>
+    <price>650.00</price>
+  </book>
+  <book>
+    <title>Angular Projects</title>
+    <author>Suruthi Sagar</author>
+    <price>1200.00</price>
+  </book>
+  <book>
+    <title>XML Expert Guide</title>
+    <author>Sanjaypriyan</author>
+    <price>850.00</price>
+  </book>
+</catalog>
