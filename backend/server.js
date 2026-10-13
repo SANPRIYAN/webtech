@@ -31,14 +31,17 @@ mongoose
 
 // ───────────────────────────────────────────────────────────────
 //  OPTION B — MongoDB Compass / Local  ← COMMENTED OUT
-//  No .env file needed. Just make sure MongoDB service is running.
+//  No .env file needed — URI and PORT are hardcoded directly here.
+//  PORT is set to 5000 (hardcoded). No need to add PORT to .env.
 //  To use: comment out OPTION A above and uncomment lines below.
 //  Steps:
 //    1. Start MongoDB service: net start MongoDB
+//       (Admin CMD → net start MongoDB)
 //    2. node server.js
+//    → Server will run at http://localhost:5000
 // ───────────────────────────────────────────────────────────────
 // const MONGO_URI = "mongodb://127.0.0.1:27017/web_lab";
-// const PORT = 5000;
+// const PORT = 5000;   // ← hardcoded, no .env needed for Compass
 //
 // mongoose
 //   .connect(MONGO_URI)
