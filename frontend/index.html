@@ -94,6 +94,9 @@
                placeholder="Age" required>
 
         <button type="submit">Add Student</button>
+        <!-- UPDATE BUTTON (Uncomment to use)
+        <button type="button" ng-click="updateRecord()">Update Student</button>
+        -->
     </form>
 
     <p class="message">{{message}}</p>
@@ -117,6 +120,9 @@
             <td>{{s.department}}</td>
             <td>{{s.age}}</td>
             <td>
+                <!-- EDIT BUTTON (Uncomment to edit)
+                <button type="button" ng-click="editRecord(s)">Edit</button>
+                -->
                 <button class="delete-btn" ng-click="deleteRecord(s._id)">
                     Delete
                 </button>
@@ -168,6 +174,24 @@ app.controller("MainController", function($scope, $http) {
             $scope.message = "Error deleting record";
         });
     };
+
+    /*
+    // EDIT & UPDATE (Uncomment to use)
+    $scope.editRecord = function(s) {
+        $scope.formData = angular.copy(s);
+    };
+
+    $scope.updateRecord = function() {
+        $http.put(API + "/" + $scope.formData._id, $scope.formData)
+        .then(function(response) {
+            $scope.message = response.data.message;
+            $scope.formData = {};
+            $scope.getRecords();
+        }, function() {
+            $scope.message = "Error updating record";
+        });
+    };
+    */
 
     // Load existing records on startup
     $scope.getRecords();
